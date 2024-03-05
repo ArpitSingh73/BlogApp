@@ -1,15 +1,24 @@
-import Navbar from "@/components/navbar/Navbar";
+import Link from "next/link";
 import styles from "./homepage.module.css";
-import Footer from "@/components/footer/Footer";
+import Featured from "@/components/featured/Featured";
+import CategoryList from "@/components/categoryList/CategoryList";
+import CardList from "@/components/cardList/CardList";
+import Menu from "@/components/Menu/Menu";
 
-export default function Home() {
-  return <div>
-   
-  </div>;
+export default function Home({ searchParams }) {
+  const page = parseInt(searchParams.page) || 1;
+
+  return (
+    <div className={styles.container}>
+      <Featured />
+      <CategoryList />
+      <div className={styles.content}>
+        <CardList page={page} />
+        <Menu />
+      </div>
+    </div>
+  );
 }
-
-
-
 
 // 🌟 Looking to break free from the traditional 9-to-5 jobs? 🌟 Discover a world of possibilities with remote work! 💼 Check out these 20 Websites for Remote Employment and $USD Earnings:
 
@@ -72,6 +81,5 @@ export default function Home() {
 
 // 👉𝐃𝐌 𝐨𝐫 𝐞𝐦𝐚𝐢𝐥 𝐚𝐭 𝐡𝐫@𝐬𝐢𝐦𝐞𝐧𝐭𝐩.𝐨𝐫𝐠 𝐢𝐟 𝐲𝐨𝐮 𝐚𝐫𝐞 𝐥𝐨𝐨𝐤𝐢𝐧𝐠 𝐟𝐨𝐫
 // 𝐑𝐞𝐬𝐮𝐦𝐞 𝐖𝐫𝐢𝐭𝐢𝐧𝐠 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬
-
 
 // 👉 𝐆𝐫𝐚𝐛 𝐚 𝐜𝐨𝐩𝐲 𝐨𝐟 𝐈𝐍𝐓𝐄𝐑𝐕𝐈𝐄𝐖 𝐖𝐈𝐍𝐍𝐈𝐍𝐆 𝐓𝐎𝐎𝐋𝐊𝐈𝐓 𝐇𝐄𝐑𝐄 -- > https://lnkd.in/drGHcD5D

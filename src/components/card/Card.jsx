@@ -13,8 +13,7 @@ function Card() {
           <span className={styles.date}>date -</span>
           <span className={styles.category}>category</span>
         </div>
-        <Link>
-          {" "}
+        <Link href="/">
           <h1>dewav reqag thw r nyw wny</h1>
         </Link>
         <p className={styles.desc}>

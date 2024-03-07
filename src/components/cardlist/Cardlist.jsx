@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./cardlist.module.css";
-import Link from "next/link";
-import Image from "next/image";
 import Card from "../card/Card";
 import Pagination from "../pagination/Pagination";
 

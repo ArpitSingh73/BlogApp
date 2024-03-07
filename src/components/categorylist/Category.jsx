@@ -8,10 +8,8 @@ function Category() {
     <div className={styles.container}>
       <h1 className={styles.title}> Popular categories</h1>
       <div className={styles.categories}>
-        <Link
-          href="blog?cat=style"
-          className={`${styles.Category} ${styles.style}`}
-        >
+        {/*  href="blog?cat=style" */}
+        <Link href="/" className={`${styles.Category} ${styles.style}`}>
           <Image
             src="/style.png"
             alt=""
@@ -21,10 +19,7 @@ function Category() {
           />
           Coding
         </Link>
-        <Link
-          href="blog?cat=style"
-          className={`${styles.Category} ${styles.style}`}
-        >
+        <Link href="/" className={`${styles.Category} ${styles.style}`}>
           <Image
             src="/style.png"
             alt=""
@@ -34,10 +29,7 @@ function Category() {
           />
           Coding
         </Link>
-        <Link
-          href="blog?cat=style"
-          className={`${styles.Category} ${styles.style}`}
-        >
+        <Link href="/" className={`${styles.Category} ${styles.style}`}>
           <Image
             src="/style.png"
             alt=""
@@ -47,10 +39,7 @@ function Category() {
           />
           Coding
         </Link>
-        <Link
-          href="blog?cat=style"
-          className={`${styles.Category} ${styles.style}`}
-        >
+        <Link href="/" className={`${styles.Category} ${styles.style}`}>
           <Image
             src="/style.png"
             alt=""
@@ -60,10 +49,7 @@ function Category() {
           />
           Coding
         </Link>
-        <Link
-          href="blog?cat=style"
-          className={`${styles.Category} ${styles.style}`}
-        >
+        <Link href="/" className={`${styles.Category} ${styles.style}`}>
           <Image
             src="/style.png"
             alt=""
@@ -73,10 +59,7 @@ function Category() {
           />
           Coding
         </Link>
-        <Link
-          href="blog?cat=style"
-          className={`${styles.Category} ${styles.style}`}
-        >
+        <Link href="/" className={`${styles.Category} ${styles.style}`}>
           <Image
             src="/style.png"
             alt=""

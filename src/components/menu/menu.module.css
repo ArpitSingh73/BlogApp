@@ -1,104 +1,4 @@
-.container {
-  flex: 2;
-  margin-top: 60px;
-}
-
-.subtitle {
-  color: gray;
-  font-size: 16px;
-  font-weight: 400;
-}
-.title {
-  font-size: 28px;
-}
-
-.items{
-  margin-top: 35px;
-  margin-bottom: 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-}
-
-.item{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.imageContainer{
-  flex:1;
-  aspect-ratio: 1/1;
-  position: relative;
-}
-
-
-.textContainer{
-  flex: 4;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.postTitle{
-  font-size: 18px;
-  font-family: 500;
-  color:var(--softTextColor)
-}
-
-.detail{
-  font-size: 12px;
-}
-.date{
-  color: gray;
-}
-.image{
-  border-radius: 50%;
-  border: 3px solid blue;
-  object-fit: cover;
-}
-
-.category{
-  padding:3px 8px;
-  border-radius: 10px;
-  font-size: 12px;
-  color:white;
-  width: max-content;
-}
-
-.category.travel{
-  background-color: mediumaquamarine;
-}
-
-/* .travel{
-  background-color: aliceblue;
-} */
-.culture{
-  background-color: aliceblue;
-}
-.food{
-  background-color: aliceblue;
-}
-.fashion{
-  background-color: aliceblue;
-}
-.coding{
-  background-color: aliceblue;
-}
-.style{
-  background-color: aliceblue;
-}
-
-.detail{
-  font-size: 12px;
-}
-
-.date{
-  color:gray;
-}
-
-
-.categoryList{
+.categoryList {
   margin-top: 35px;
   margin-bottom: 60px;
   display: flex;
@@ -106,27 +6,32 @@
   gap: 20px;
 }
 
-.categoryItem{
+.categoryItem {
   padding: 10px 25px;
   border-radius: 10px;
   font-size: 14px;
 }
 
-.categoryItem.style{
-  background-color: aquamarine;
+.categoryItem.style {
+  background-color: #57c4ff31;
 }
-.categoryItem.fashion{
-  background-color: aquamarine;
+
+.categoryItem.fashion {
+  background-color: #da85c731;
 }
-.categoryItem.food{
-  background-color: aquamarine;
+
+.categoryItem.food {
+  background-color: #7fb88133;
 }
-.categoryItem.travel{
-  background-color: aquamarine;
+
+.categoryItem.travel {
+  background-color: #ff795736;
 }
-.categoryItem.culture{
-  background-color: aquamarine;
+
+.categoryItem.culture {
+  background-color: #ffb04f45;
 }
-.categoryItem.coding{
-  background-color: aquamarine;
+
+.categoryItem.coding {
+  background-color: #5e4fff31;
 }

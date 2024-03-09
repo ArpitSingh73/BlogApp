@@ -19,7 +19,7 @@ function Category() {
           />
           Coding
         </Link>
-        <Link href="/" className={`${styles.Category} ${styles.style}`}>
+        <Link href="/" className={`${styles.Category} ${styles.fashion}`}>
           <Image
             src="/style.png"
             alt=""
@@ -29,7 +29,7 @@ function Category() {
           />
           Coding
         </Link>
-        <Link href="/" className={`${styles.Category} ${styles.style}`}>
+        <Link href="/" className={`${styles.Category} ${styles.food}`}>
           <Image
             src="/style.png"
             alt=""
@@ -39,7 +39,7 @@ function Category() {
           />
           Coding
         </Link>
-        <Link href="/" className={`${styles.Category} ${styles.style}`}>
+        <Link href="/" className={`${styles.Category} ${styles.travel}`}>
           <Image
             src="/style.png"
             alt=""
@@ -49,7 +49,7 @@ function Category() {
           />
           Coding
         </Link>
-        <Link href="/" className={`${styles.Category} ${styles.style}`}>
+        <Link href="/" className={`${styles.Category} ${styles.culture}`}>
           <Image
             src="/style.png"
             alt=""
@@ -59,7 +59,7 @@ function Category() {
           />
           Coding
         </Link>
-        <Link href="/" className={`${styles.Category} ${styles.style}`}>
+        <Link href="/" className={`${styles.Category} ${styles.coding}`}>
           <Image
             src="/style.png"
             alt=""

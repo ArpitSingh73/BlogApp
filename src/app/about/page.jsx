@@ -4,35 +4,32 @@ import styles from "./about.module.css";
 
 
 export const metadata = {
-  title: "Next App",
+  title: "About",
   description: "Welcome to about page",
 };
 const AboutPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h2 className={styles.subtitle}>About Agency</h2>
+        <h2 className={styles.subtitle}>.</h2>
         <h1 className={styles.title}>
-          We create digital ideas that are bigger, bolder, braver and better.
+          I write my personal blogs regarding my experiences & new tech I am learning.
         </h1>
         <p className={styles.desc}>
-          We create digital ideas that are bigger, bolder, braver and better. We
-          believe in good ideas flexibility and precission We’re world’s Our
-          Special Team best consulting & finance solution provider. Wide range
-          of web and software development services.
+          I developed this project to implement my learnings of NextJS and Docker. The project itself is an imitation of Lamadev's tutorial on NextJS.
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>
-            <h1>10 K+</h1>
-            <p>Year of experience</p>
+            <h1>1+</h1>
+            <p>Year of React experience</p>
           </div>
           <div className={styles.box}>
-            <h1>10 K+</h1>
-            <p>Year of experience</p>
+            <h1>1+</h1>
+            <p>Year of Nextjs experience</p>
           </div>
           <div className={styles.box}>
-            <h1>10 K+</h1>
-            <p>Year of experience</p>
+            <h1>1+</h1>
+            <p>Year of JavaScript experience</p>
           </div>
         </div>
       </div>

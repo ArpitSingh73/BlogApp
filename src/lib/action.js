@@ -136,7 +136,10 @@ export const login = async (prevState, formData) => {
   const { username, password } = Object.fromEntries(formData);
 
   try {
+    console.log("doing................");
+
     await signIn("credentials", { username, password });
+    console.log("done................");
   } catch (err) {
     console.log(err);
 
@@ -144,5 +147,6 @@ export const login = async (prevState, formData) => {
       return { error: "Invalid username or password" };
     }
     throw err;
-  }
-};
+  } 
+}; 
+  

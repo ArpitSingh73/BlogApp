@@ -43,7 +43,7 @@ export const authConfig = {
         return Response.redirect(new URL("/", request.nextUrl));
       }
 
-      return true;
+      return true
     },
   },
 };

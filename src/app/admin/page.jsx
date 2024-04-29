@@ -6,6 +6,11 @@ import AdminUsers from "@/components/adminUsers/adminUsers";
 import AdminUserForm from "@/components/adminUserForm/adminUserForm";
 import { auth } from "@/lib/auth";
 
+export const metadata = {
+  title: "Admin",
+  description: "Welcome to admin page",
+};
+
 const AdminPage = async () => {
   const session = await auth();
 

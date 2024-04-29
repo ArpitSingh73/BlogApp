@@ -4,7 +4,7 @@ import styles from "./contact.module.css";
 
 
 export const metadata = {
-  title: "Next App",
+  title: "Contact",
   description: "Welcome to contact page",
 };
 
@@ -17,9 +17,9 @@ const ContactPage = () => {
       </div>
       <div className={styles.formContainer}>
         <form action="" className={styles.form}>
-          <input type="text" placeholder="Name and Surname" />
-          <input type="text" placeholder="Email Address" />
-          <input type="text" placeholder="Phone Number (Optional)" />
+          <input type="text" placeholder="your name" />
+          <input type="text" placeholder="your email address" />
+          <input type="text" placeholder="your phone number (Optional)" />
           <textarea
             name=""
             id=""

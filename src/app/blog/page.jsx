@@ -2,6 +2,11 @@ import PostCard from "@/components/postCard/PostCard";
 import styles from "./blog.module.css";
 import { getPosts } from "@/lib/data";
 
+export const metadata = {
+  title: "bloG.",
+  description: "Welcome to blog page",
+};
+
 // FETCH DATA WITH AN API
 const getData = async () => {
   // const res = await fetch("http://localhost:3000/api/blog", {

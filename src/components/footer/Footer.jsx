@@ -3,10 +3,8 @@ import styles from "./footer.module.css";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.logo}>lamadev</div>
-      <div className={styles.text}>
-        Lama creative thoughts agency © All rights reserved.
-      </div>
+      <div className={styles.logo}>learn NEXTjs</div>
+      <div className={styles.text}>NEXTjs is the successor of ReactJS.</div>
     </div>
   );
 };

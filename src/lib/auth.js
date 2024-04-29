@@ -1,5 +1,5 @@
 import NextAuth from "next-auth";
-import GitHub from "next-auth/providers/github";
+import GithubProvider from "next-auth/providers/github";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { connectToDb } from "./utils";
 import { User } from "./models";
@@ -10,6 +10,7 @@ const login = async (credentials) => {
   try {
     connectToDb();
     const user = await User.findOne({ username: credentials.username });
+    console.log(user)
 
     if (!user) throw new Error("Wrong credentials!");
 
@@ -28,14 +29,10 @@ const login = async (credentials) => {
 };
 
 export const {
-  handlers: { GET, POST },
-  auth,
-  signIn,
-  signOut,
-} = NextAuth({
+  handlers: { GET, POST },auth,signIn,signOut,} = NextAuth({
   ...authConfig,
   providers: [
-    GitHub({
+    GithubProvider({
       clientId: process.env.GITHUB_ID,
       clientSecret: process.env.GITHUB_SECRET,
     }),
@@ -52,10 +49,13 @@ export const {
   ],
   callbacks: {
     async signIn({ user, account, profile }) {
-      if (account.provider === "github") {
+
+      console.log("in signin....")
+      if (account.provider === "github") { 
         connectToDb();
         try {
           const user = await User.findOne({ email: profile.email });
+      console.log("in signin 2....");
 
           if (!user) {
             const newUser = new User({
@@ -65,6 +65,8 @@ export const {
             });
 
             await newUser.save();
+                  console.log("in signin 3....");
+
           }
         } catch (err) {
           console.log(err);

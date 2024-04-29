@@ -46,6 +46,8 @@
 .imgContainer {
   flex: 1;
   position: relative;
+  background-color: rgb(144, 144, 144);
+  border-radius: 10px;
 }
 
 @media (max-width: 1024px) {

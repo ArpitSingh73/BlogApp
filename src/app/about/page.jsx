@@ -13,10 +13,13 @@ const AboutPage = () => {
       <div className={styles.textContainer}>
         <h2 className={styles.subtitle}>.</h2>
         <h1 className={styles.title}>
-          I write my personal blogs regarding my experiences & new tech I am learning.
+          I write my personal blogs regarding my experiences & new tech I am
+          learning.
         </h1>
         <p className={styles.desc}>
-          I developed this project to implement my learnings of NextJS and Docker. The project itself is an imitation of Lamadev's tutorial on NextJS.
+          I developed this project to implement my learnings of NextJS and
+          Docker. The project itself is an imitation of tutorial of Lamadev
+          on NextJS.
         </p>
         <div className={styles.boxes}>
           <div className={styles.box}>
